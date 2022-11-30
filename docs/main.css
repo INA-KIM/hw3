@@ -1,0 +1,219 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Pretendard, sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-size: 32px;
+  line-height: 42px;
+  color: rgb(0, 0, 0);
+  margin: 0px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-box {
+  width: 279.33px;
+  height: 480px;
+  padding: 38px 27px 19px;
+  text-align: left;
+  background: rgb(255, 255, 255);
+  border-width: 2px 1px 1px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0) rgba(0, 0, 0, 0.09) rgba(0, 0, 0, 0.09);
+}
+.wrapper-box:nth-child(2) {
+  width: 279.33px;
+  height: 500px;
+  padding: 38px 27px 19px;
+  background: rgb(255, 255, 255);
+  border-top: 2px solid rgb(74, 187, 252);
+  box-shadow: rgb(0 0 0 / 16%) 0px 6px 24px 0px;
+  z-index: 1;
+  text-align: left;
+}
+
+.wrapper-box:nth-child(3) {
+  background: rgb(255, 255, 255);
+  border-width: 2px 1px 1px;
+  border-style: solid;
+  border-color: rgb(136, 126, 252) rgb(224, 224, 224) rgb(224, 224, 224);
+}
+.text-box {
+  width: 224.33px;
+  height: 120px;
+  margin: 0 0 40px;
+}
+.text-box.second-box div:nth-child(2) span:nth-child(2),
+.text-box.last-box div:nth-child(2) span:nth-child(2) {
+  font-size: 12px;
+  display: inline-block;
+  padding-left: 2px;
+}
+
+.text-box.first-box div:nth-child(1) span {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.00833em;
+  color: rgb(153, 151, 149);
+}
+.text-box.first-box div,
+.text-box.second-box div,
+.text-box.last-box div {
+  margin-top: 8px;
+}
+.text-box.first-box div:last-child span {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: #363636;
+}
+
+.text-box.second-box div:nth-child(1) span {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.00833em;
+  color: rgb(74, 187, 252);
+}
+
+.text-box.second-box div:nth-child(3) span,
+.text-box.second-box div:last-child span {
+  font-size: 13px;
+  color: #363636ab;
+}
+.text-box.second-box div:last-child {
+  margin-top: 0;
+}
+.text-box.second-box div:nth-child(2) span {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: #363636;
+}
+
+.text-box.last-box div:nth-child(1) span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.00833em;
+  color: #887efc;
+}
+
+.text-box.last-box div:nth-child(2) span {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: #363636;
+}
+.text-box.last-box div:nth-child(3) span,
+.text-box.last-box div:last-child span {
+  font-size: 13px;
+  color: #363636ab;
+}
+.text-box.last-box div:last-child {
+  margin-top: 0;
+}
+.check-list-box {
+  width: 224.33px;
+  height: 173px;
+}
+.check-list {
+  width: 100%;
+  padding: 0;
+}
+.check-list li {
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #363636;
+  padding-left: 26px;
+}
+
+.check-list li::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #dadade;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -8px;
+  background-image: url(./mem_chk.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 9px;
+}
+.check-list.blue li::before {
+  background-color: rgb(74, 187, 252);
+  opacity: 0.32;
+}
+.check-list.purple li::before {
+  background-color: rgb(136, 126, 252);
+  opacity: 0.32;
+}
+.check-list span {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.check-list-tip span {
+  font-size: 12px;
+  color: #36363680;
+}
+
+.btn {
+  width: 225.33px;
+  height: 86.96px;
+  text-align: center;
+}
+.btn button {
+  width: 100%;
+  border-radius: 4px;
+  font-size: 0.813rem;
+  line-height: 1.77;
+  border-color: rgb(33, 33, 33);
+  height: 36px;
+  transition: all 0.2s ease 0s;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 5px 15px;
+}
+.btn .btn-bl {
+  background-color: rgb(54, 54, 54);
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+
+.btn div:first-child {
+  margin-top: 0;
+}
+
+.btn span {
+  font-size: 12px;
+  color: #9a9a9a;
+}
+.btn div:nth-child(2) {
+  margin-top: 8px;
+}
+.btn a {
+  font-size: 13px;
+  color: #363636;
+}
